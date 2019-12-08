@@ -1,0 +1,95 @@
+/* Global */
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #F5ECCE;
+}
+html {
+    font-family: "helvetica neue", sans-serif;
+}
+
+header{
+	background-color: #F5DA81;
+}
+h1, h2, h3{
+	text-align: center;
+}
+	.menu {
+    margin: 0 30px 0 0;
+}
+	.menu a {
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+	font-size: 20px;
+}
+.læs-mere-button{
+		font-size: 20px;
+		text-align: center;
+		border: none;
+		padding: 8px;
+		width: 100%;
+		background-color: #ffdf00;
+	}
+.border-box {
+		border-style: solid;
+		padding: 10px;
+		margin-bottom: 2%;
+		}
+    footer {
+        display: none;
+    }
+
+/* Mobile First op til 767px */
+@media (max-width: 767px){
+	.burgermenu{
+		display: flex;
+	}
+
+
+	#toggle {
+    	display: none;
+	}
+
+	#logo{
+		width: 90%;
+		margin-top: 3%;
+		margin-left: 5%;
+	}
+
+    label {
+        cursor: pointer;
+		color: black;
+		font-size: 40px;
+		margin: 25%;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+  }
+
+/* Ipad fra 768px */
+@media (min-width: 768px){
+}
+/* Fra 1024 px - Desktop */
+@media (min-width: 1024px){
+
+}
