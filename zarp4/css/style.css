@@ -116,7 +116,7 @@ font-family: "arial";
 font-weight: bold;
 position: fixed;
 bottom: 0;
-background-color: #f5f3ef;
+/*background-color: #f5f3ef; */
 }
 
 /* Index-flexbox */
@@ -201,5 +201,9 @@ body {
   .boxc  {
     width: 7%;
     right: 20px;
+  }
+  .zarpaulo_scroll {
+  font-family: "arial";
+  font-size: 23px;
   }
 }
