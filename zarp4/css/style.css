@@ -110,6 +110,39 @@ body {
 	}
 
 /* footer */
+.marquee {
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
+
+.marquee--inner {
+  display: block;
+  width: 2024px;
+  margin: 0px 0;
+  position: absolute;
+  opacity: 0;
+  animation: marquee 14.7s linear 1;
+}
+
+@keyframes marquee {
+  0% { left: 0;
+  opacity: 1;}
+  100% { left: -100%;
+  opacity: 1;}
+}
+
+.zarpaulo_scroll_start {
+font-family: "arial";
+font-weight: bold;
+position: fixed;
+bottom: 0;
+margin: 0 24.7px;
+float: left;
+transition: all .2s ease-out;
+/*background-color: #f5f3ef; */
+}
 
 .zarpaulo_scroll {
 font-family: "arial";
@@ -203,7 +236,6 @@ body {
     right: 20px;
   }
   .zarpaulo_scroll {
-  font-family: "arial";
   font-size: 23px;
   }
 }
