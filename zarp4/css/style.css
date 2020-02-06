@@ -112,11 +112,11 @@ body {
 /* footer */
 
 .zarpaulo_scroll {
-font-family: "arial black";
+font-family: "arial";
 font-weight: bold;
 position: fixed;
 bottom: 0;
-background-color: #f5f3ef;
+/*background-color: #f5f3ef; */
 }
 
 /* Index-flexbox */
@@ -185,5 +185,25 @@ body {
 
 /* Fra 1920 px - Desktop */
 @media (min-width: 1920px) {
-
+  .menu a {
+    font-size: 23px;
+    line-height: 60px;
+  }
+  .boxb {
+    font-size: 30px;
+  }
+  .billedgalleri {
+    width: 32%;
+    height: 24%;
+    margin-bottom: 5%;
+    margin-top: 7.5%;
+  }
+  .boxc  {
+    width: 7%;
+    right: 20px;
+  }
+  .zarpaulo_scroll {
+  font-family: "arial";
+  font-size: 23px;
+  }
 }
