@@ -189,10 +189,13 @@ body {
     font-size: 23px;
     line-height: 60px;
   }
+  .boxb {
+    font-size: 30px;
+  }
   .billedgalleri {
-    width: 40%;
-    height: 30%;
-    margin-bottom: 8%;
-    margin-top: 8%;
+    width: 32%;
+    height: 24%;
+    margin-bottom: 7%;
+    margin-top: 9%;
   }
 }
