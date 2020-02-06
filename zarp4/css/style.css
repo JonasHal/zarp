@@ -123,7 +123,7 @@ body {
   margin: 0px 0;
   position: absolute;
   opacity: 0;
-  animation: marquee 14.7s linear 1;
+  animation: marquee 14.54s linear 1;
 }
 
 @keyframes marquee {
