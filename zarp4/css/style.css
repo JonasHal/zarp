@@ -185,5 +185,7 @@ body {
 
 /* Fra 1920 px - Desktop */
 @media (min-width: 1920px) {
-
+  .menu a {
+    font-size: 23px;
+  }
 }
