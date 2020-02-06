@@ -187,7 +187,7 @@ body {
 @media (min-width: 1920px) {
   .menu a {
     font-size: 23px;
-    line-height: 60;
+    line-height: 60px;
   }
   .billedgalleri {
 
