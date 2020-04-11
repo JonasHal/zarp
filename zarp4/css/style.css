@@ -164,6 +164,14 @@ flex-direction: column;
   margin-left: 874px;
   text-align: center;
 }
+
+/* Lydafspilleren */
+
+.afspiller {
+  text-align: center;
+}
+
+
 /* Fra 1024 px - Desktop */
 @media (min-width: 1024px) {
 
