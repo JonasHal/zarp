@@ -64,16 +64,10 @@ body {
     display: grid;
     width: 1024px;
     height: 200px;
-    -ms-grid-template: [header-left] "head head" 5% [header-right]
-                   [main-left]   "nav  main" 1fr  [main-right]
-                   [footer-left] "nav  foot" 0px [footer-right]
-                   / 86px 1fr;
     grid-template: [header-left] "head head" 5% [header-right]
                    [main-left]   "nav  main" 1fr  [main-right]
                    [footer-left] "nav  foot" 0px [footer-right]
                    / 86px 1fr;
-
-
   }
 
   header {
@@ -191,10 +185,6 @@ flex-direction: column;
 body {
     display: grid;
     width: 100%;
-    -ms-grid-template: [header-left] "head head" 5% [header-right]
-                   [main-left]   "nav  main" 1fr  [main-right]
-                   [footer-left] "nav  foot" 0px [footer-right]
-                   / 8% 1fr;
     grid-template: [header-left] "head head" 5% [header-right]
                    [main-left]   "nav  main" 1fr  [main-right]
                    [footer-left] "nav  foot" 0px [footer-right]
