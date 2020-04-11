@@ -67,7 +67,7 @@ body {
     grid-template: [header-left] "head head" 5% [header-right]
                    [main-left]   "nav  main" 1fr  [main-right]
                    [footer-left] "nav  foot" 0px [footer-right]
-                   / 0px 1fr;
+                   / 86px 1fr;
   }
 
   header {
@@ -187,7 +187,7 @@ body {
     grid-template: [header-left] "head head" 5% [header-right]
                    [main-left]   "nav  main" 1fr  [main-right]
                    [footer-left] "nav  foot" 0px [footer-right]
-                   / 0px 1fr;
+                   / 8% 1fr;
   }
   .billedgalleri {
     transform: rotate(90deg);
