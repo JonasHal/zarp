@@ -26,12 +26,18 @@ h1, h2, h3 {
 
 .menu {
   margin: 0 30px 0 0;
+  margin-top: 4.8%;
 }
 
 .menu a {
+  display: block;
+  width: 50px;
+  height: 17px;
+  margin-left: 4%;
+  margin-top: 24px;
   text-decoration: none;
   color: blue;
-  line-height: 40px;
+  line-height: 42px;
   font-size: 17px;
   text-decoration: underline;
 }
@@ -66,8 +72,8 @@ body {
     height: 200px;
     grid-template: [header-left] "head head" 5% [header-right]
                    [main-left]   "nav  main" 1fr  [main-right]
-                   [footer-left] "nav  foot" 0px [footer-right]
-                   / 0px 1fr;
+                   [footer-left] "foot  foot" 20px [footer-right]
+                   / 86px 1fr;
   }
 
   header {
@@ -76,7 +82,6 @@ body {
 
   .boxa + .menu {
     grid-area: nav;
-    z-index: -1;
   }
 
   main {
@@ -93,15 +98,6 @@ body {
   font-size: 22px;
 }
 
-
-.menu {
-  margin-top: 4.8%;
-}
-.menu a {
-  display: block;
- margin-left: 4%;
-}
-
   label{
 		display: none;
 	}
@@ -111,7 +107,6 @@ body {
 	}
 
 /* footer */
-
 .container_footer {
   font-family: "arial";
   font-weight: bold;
@@ -187,8 +182,8 @@ body {
     width: 100%;
     grid-template: [header-left] "head head" 5% [header-right]
                    [main-left]   "nav  main" 1fr  [main-right]
-                   [footer-left] "nav  foot" 0px [footer-right]
-                   / 0 1fr;
+                   [footer-left] "foot  foot" 0px [footer-right]
+                   / 6% 1fr;
   }
   .billedgalleri {
     transform: rotate(90deg);
@@ -212,7 +207,9 @@ body {
 @media (min-width: 1920px) {
   .menu a {
     font-size: 21px;
-    line-height: 60px;
+    width: 60px;
+    height: 21px;
+    margin-top: 35px;
   }
   .boxb {
     font-size: 30px;
@@ -226,8 +223,5 @@ body {
   .boxc  {
     width: 9%;
     right: 20px;
-  }
-  .zarpaulo_scroll {
-  font-family: "arial";
   }
 }
