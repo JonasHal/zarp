@@ -87,6 +87,8 @@ body {
 
   main {
     grid-area: main;
+    margin-left: 141px;
+    margin-right: 141px;
   }
 
   footer {
@@ -94,7 +96,6 @@ body {
   }
 
 .boxb {
-  z-index: 1;
   margin-left: 4%;
   margin-top: 5%;
   font-size: 22px;
@@ -153,8 +154,6 @@ flex-direction: column;
 }
 .container {
   margin-top: 60px;
-  margin-right: 6%;
-  text-align: center;
 }
 
 .boxc  {
@@ -186,15 +185,15 @@ body {
     width: 100%;
     grid-template: [header-left] "head head" 5% [header-right]
                    [main-left]   "nav  main" 1fr  [main-right]
-                   [footer-left] "foot  foot" 0px [footer-right]
+                   [footer-left] "foot  foot" 20px [footer-right]
                    / 15% 1fr;
   }
   .billedgalleri {
     transform: rotate(90deg);
-    width: 48%;
-    height: 36%;
-    margin-bottom: 6%;
-    margin-top: 10%;
+    width: 72%;
+    height: 54%;
+    margin-bottom: 10%;
+    margin-top: 16%;
     border-radius: 3px;
   }
 }
@@ -211,13 +210,17 @@ body {
     font-size: 30px;
   }
   .billedgalleri {
-    width: 32%;
-    height: 24%;
-    margin-bottom: 5%;
-    margin-top: 7.5%;
+    width: 44%;
+    height: 33%;
+    margin-bottom: 6%;
+    margin-top: 8.5%;
   }
   .boxc  {
     width: 9%;
     right: 20px;
+  }
+  main {
+    margin-right: 164px;
+    margin-left: 164px;
   }
 }
