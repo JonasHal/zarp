@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* Global - Standart */
 
 body {
@@ -46,9 +53,12 @@ h1, h2, h3 {
 .skrivestreg {
   color: white;
   background-color: blue;
-  animation-name: blink;
-  animation-duration: 0.9s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 /* Animation */
 /* Safari 4.0 - 8.0 */
@@ -68,30 +78,43 @@ h1, h2, h3 {
 }
 
 body {
+    display: -ms-grid;
     display: grid;
     width: 1024px;
     height: 200px;
-    grid-template: [header-left] "head head" 0% [header-right]
+    -ms-grid-rows: 0% 1fr 20px;
+    -ms-grid-columns: 15% 1fr;
+        grid-template: [header-left] "head head" 0% [header-right]
                    [main-left]   "nav  main" 1fr  [main-right]
                    [footer-left] "foot  foot" 20px [footer-right]
                    / 15% 1fr;
   }
 
   header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: head;
   }
 
   .menu {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: nav;
   }
 
   main {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: main;
     margin-left: 141px;
     margin-right: 141px;
   }
 
   footer {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: foot;
   }
 
@@ -99,6 +122,14 @@ body {
   margin-left: 4%;
   margin-top: 5%;
   font-size: 22px;
+}
+
+.boxc  {
+  top: 0;
+  width: 150px;
+  position: absolute;
+  margin-left: 874px;
+  text-align: center;
 }
 
   label{
@@ -120,49 +151,70 @@ body {
 }
 
 .scrolling {
-  animation: marquee 1s linear infinite;
+  -webkit-animation: marquee 1s linear infinite;
+          animation: marquee 1s linear infinite;
   display: inline-block;
   padding-right: 5px;
 }
 
-@keyframes marquee {
+@-webkit-keyframes marquee {
   from {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 
 /* Index-flexbox */
 
 .billede-flex {
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-align-items: center;
-justify-content: center;
-flex-wrap: wrap;
-flex-direction: column;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
 }
 
 .billedgalleri {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
   width: 480px;
   height: 360px;
   margin-top: 13.5%;
   margin-bottom: 6.5%;
   border-radius: 3px;
 }
+
 .container {
   margin-top: 60px;
 }
 
-.boxc  {
-  top: 0;
-  width: 150px;
-  position: absolute;
-  margin-left: 874px;
-  text-align: center;
-}
+
 
 /* Lydafspilleren */
 
@@ -186,20 +238,47 @@ flex-direction: column;
 }
 
 body {
+    display: -ms-grid;
     display: grid;
     width: 100%;
-    grid-template: [header-left] "head head" 5% [header-right]
+    -ms-grid-rows: 5% 1fr 20px;
+    -ms-grid-columns: 15% 1fr;
+        grid-template: [header-left] "head head" 5% [header-right]
                    [main-left]   "nav  main" 1fr  [main-right]
                    [footer-left] "foot  foot" 20px [footer-right]
                    / 15% 1fr;
   }
   .billedgalleri {
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
     width: 72%;
     height: 54%;
     margin-bottom: 10%;
     margin-top: 16%;
     border-radius: 3px;
+  }
+
+header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+
+.menu {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+main {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+
+footer {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
   }
 }
 
