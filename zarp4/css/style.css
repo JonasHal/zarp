@@ -73,6 +73,11 @@ h1, h2, h3 {
   100% {opacity: 100;}
 }
 
+.kontaktinfo {
+  text-align: center;
+  margin-top: 50px;
+
+}
 
 
 @media (max-width: 767px) {
@@ -180,9 +185,9 @@ margin-top: 14px;
   }
 
   .lyrikmenu > img {
-    width: 40%;
-    height: 70.7%;
-    margin: 10px;
+    width: 100%;
+    height: 141.428%;
+    margin: 25px;
   }
 
   .scan1, .scan3, .scan4 {
