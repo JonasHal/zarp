@@ -7,6 +7,13 @@
 
 /* Global - Standart */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body {
   width: 100%;
   margin: 0;
@@ -83,6 +90,8 @@ h1, h2, h3 {
 @media (max-width: 767px) {
   .burgermenu {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border-bottom: 1px solid #EAEAEB;
   }
@@ -178,10 +187,15 @@ margin-top: 14px;
   /* Lyrik */
 
   .lyrikmenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .lyrikmenu > img {
@@ -191,7 +205,9 @@ margin-top: 14px;
   }
 
   .scan1, .scan3, .scan4 {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 
 
@@ -393,10 +409,15 @@ display: flex;
 /* Lyrik */
 
 .lyrikmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .lyrikmenu > img {
@@ -406,7 +427,9 @@ display: flex;
 }
 
 .scan1, .scan3, .scan4 {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 
