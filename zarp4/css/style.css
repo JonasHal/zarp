@@ -203,12 +203,12 @@ margin-top: 14px;
     height: 141.428%;
     margin: 25px;
   }
-
+/*
   .scan1, .scan3, .scan4 {
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
-  }
+  }*/
 
 
 
@@ -425,12 +425,12 @@ display: flex;
   height: 70.7%;
   margin: 10px;
 }
-
+/*
 .scan1, .scan3, .scan4 {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-}
+}*/
 
 
 .boxc  {
