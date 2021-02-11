@@ -492,10 +492,10 @@ footer {
     font-size: 30px;
   }
   .billedgalleri {
-    width: 55%;
-    height: 44%;
-    margin-bottom: 0%;
-    margin-top: 0%;
+    width: 44%;
+    height: 33%;
+   /* margin-bottom: 6%;
+    margin-top: 8.5%;*/
   }
   .boxc  {
     width: 9%;
